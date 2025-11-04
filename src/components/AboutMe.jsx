@@ -39,16 +39,6 @@ export default function AboutMe() {
                   </>
                 }
               />
-
-              {/* <AboutInfo
-                title="Impacto"
-                text={<>
-                  My projects have served <span className="text-purple-400">100k+ users</span>, processing millions of
-                  requests. But numbers don't tell the whole story—I measure success by the problems solved and the
-                  experiences created.
-                </>
-                }
-              /> */}
             </div>
           </div>
         </div>
