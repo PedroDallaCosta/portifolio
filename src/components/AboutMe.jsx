@@ -1,6 +1,36 @@
-import AboutInfo from "./AboutInfo";
-
 export default function AboutMe() {
+  const infosAbout = [
+    {
+      title: 'Quem eu sou?',
+      description:
+        <>
+          Sou um desenvolvedor movido por curiosidade e resultado. Desde cedo, a tecnologia me fascinou, comecei como toda criança, jogando seus jogos favoritos, mas foi a curiosidade de entender como tudo funcionava
+          que me motivou a descobrir a programação e me aprofundar no assunto.
+        </>
+    },
+
+    {
+      title: 'Oque eu faço?',
+      description:
+        <>
+          Sou um desenvolvedor full-stack, trabalho com JavaScript, utilizando React e Node.js, desenvolvendo interfaces completas, rápidas e intuitivas, além de integrações sólidas entre frontend, backend e banco de dados.
+          Meu foco é entregar projetos que funcionem bem, dencantem o usuário e gerem resultado real.
+        </>
+    },
+
+    {
+      title: 'Oque eu já fiz?',
+      description:
+        <>
+          Criei diversas interfaces e sistemas para servidores FiveM, atendendo milhares de jogadores simultaneamente com estabilidade e performance. Além disso, criei diversas telas e sistemas personalizados para empresas como freelancer,
+          entregando soluções sob medida e com foco em usabilidade, escalabilidade, eficiência e impacto visual.Também desenvolvi automações e soluções personalizadas que
+          otimizaram o atendimento e a gestão de clientes, sempre com o objetivo de aumentar a eficiência e escalar resultados.
+          <br />
+          Sou o tipo de profissional que une técnica, experiência e visão de produto para transformar cada linha de código em algo útil, bonito e que realmente entrega valor.
+        </>
+    }
+  ]
+
   return (
     <section id="AboutMe" className="relative bg-[#080509] py-32">
       <div className="mx-auto max-w-7xl px-6">
@@ -16,29 +46,17 @@ export default function AboutMe() {
 
           <div className="lg:col-span-7">
             <div className="space-y-8">
-              <AboutInfo
-                title="História"
-                text={
-                  <>
-                    Desde cedo sempre fui apaixonado por computadores — inicialmente pelos jogos, como Counter-Strike Source nas lan houses. Mas tudo mudou quando conheci o GTA V e, mais tarde, o mundo do GTA RP. A curiosidade sobre como os servidores funcionavam despertou meu interesse pelo desenvolvimento, e assim comecei minha jornada.
-                    Iniciei com modificações simples no GTA e, com o tempo, mergulhei no estudo de HTML, CSS e JavaScript, dando meus primeiros passos no frontend. Depois avancei para o backend, aprendendo <b className="text-purple-400">.lua</b> e <b className="text-purple-400">integrações com banco de dados</b> utilizando <b className="text-purple-400">XAMPP e HeidiSQL</b>.
-                    Com o tempo, evoluí para o ecossistema <b className="text-purple-400">React</b> e <b className="text-purple-400">Node.js</b>, desenvolvendo <b className="text-purple-400">interfaces completas e sistemas integrados</b>. Trabalhei com <b className="text-purple-400">diversas interfaces para o FiveM</b>, atendendo <b className="text-purple-400">milhares de jogadores simultaneamente</b>, cuidando desde o <b className="text-purple-400">frontend</b> até o <b className="text-purple-400">backend</b> e <b className="text-purple-400">banco de dados</b>.
-                    Durante essa trajetória, também criei <b className="text-purple-400">diversas automações</b> para otimizar o <b className="text-purple-400">atendimento e gerenciamento de clientes</b>, sempre buscando eficiência e escalabilidade. Hoje, atuo como <b className="text-purple-400">desenvolvedor pleno</b>, focado em aprimorar minhas habilidades em <b className="text-purple-400">JavaScript e seu ecossistema</b>, aprendendo e colaborando com profissionais da área para evoluir ainda mais.
-                  </>
-                }
-              />
-
-              <AboutInfo
-                title="Filosofia"
-                text={
-                  <>
-                    Acredito que uma interface não deve apenas se conectar bem ao backend — ela deve <b className="text-purple-400">funcionar para o usuário</b>. É essencial que quem utiliza o sistema se sinta <b className="text-purple-400">confortável, envolvido e satisfeito</b>. Isso começa com uma 
-                    <b className="text-purple-400">experiência de uso agradável (UX)</b>, passando por um sistema <b className="text-purple-400">rápido, otimizado, responsivo e com interações fluidas</b>.
-                    Para mim, um bom design vai além da aparência: ele torna o uso <b className="text-purple-400">intuitivo até para os usuários mais leigos</b>, criando uma conexão real com o produto. E, por trás disso, acredito em um <b className="text-purple-400">código limpo, bem organizado e 
-                    de fácil manutenção</b>, que facilite a colaboração e a evolução contínua do projeto.
-                  </>
-                }
-              />
+              {
+                infosAbout.map(({ title, description }, index) => (
+                  <div key={index} className="group relative overflow-hidden border-l-2 border-purple-400/30 bg-[#1702173b] p-8 transition-all hover:border-purple-400">
+                    <div className="absolute left-0 top-0 h-full w-1 bg-purple-400 transition-all group-hover:w-full group-hover:opacity-5" />
+                    <div className="relative z-10">
+                      <h3 className="mb-4 text-2xl font-bold text-white">{title}</h3>
+                      <p className="leading-relaxed text-slate-400">{description}</p>
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </div>

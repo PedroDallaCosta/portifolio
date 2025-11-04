@@ -19,9 +19,7 @@ export default function IntroSection() {
       <div className="relative z-10 flex min-h-screen items-center justify-center">
         <div>
           <div className="mb-6 inline-block">
-            <span className="rounded-full border border-purple-400/30 bg-purple-200/10 px-4 py-2 text-xs text-purple-600">
-              {">"} Disponível para contato
-            </span>
+            <span className="rounded-full border border-purple-400/30 bg-purple-200/10 px-4 py-2 text-xs text-purple-600">{">"} Disponível para contato</span>
           </div>
 
           <h1 className="mb-6 font-bold leading-none">
@@ -31,16 +29,16 @@ export default function IntroSection() {
           </h1>
 
           <p className="mb-8 max-w-lg text-lg leading-relaxed text-slate-400">
-            Desenvolvedor full-stack focado em <span className="text-purple-800">React</span>, <span className="text-purple-800">Node.js</span>, e <span className="text-purple-800">Lua</span>. Eu construo aplicações escalavéis com foco na usabilidade do usuário e desempenho.
+            Desenvolvendo soluções em <span className="text-purple-800">React</span>, <span className="text-purple-800">Node.js</span>, e <span className="text-purple-800">Lua</span>. Eu construo aplicações escalavéis com foco na usabilidade do usuário e desempenho.
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <a href="#projects" className="group relative overflow-hidden bg-purple-600 px-8 py-4 text-sm font-bold text-black transition-all hover:bg-purple-300">
+            <a href="#ProjectsShowcase" className="group relative overflow-hidden bg-purple-600 px-8 py-4 text-sm font-bold text-black transition-all hover:bg-purple-300">
               <span className="relative z-10">Ver Projetos</span>
               <div className="absolute inset-0 -translate-x-full bg-purple-300 transition-transform group-hover:translate-x-0" />
             </a>
 
-            <a href="#about" className="border border-purple-600/30 px-8 py-4 text-sm font-bold text-purple-600 transition-all hover:border-purple-600 hover:bg-purple-800/10">Sobre mim</a>
+            <a href="#AboutMe" className="border border-purple-600/30 px-8 py-4 text-sm font-bold text-purple-600 transition-all hover:border-purple-600 hover:bg-purple-800/10">Sobre mim</a>
           </div>
         </div>
 

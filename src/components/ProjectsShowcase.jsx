@@ -1,7 +1,7 @@
 import { useState } from "react"
 import urlShort from "../assets/url-short.png";
 import mockCurse from "../assets/mock-curse.png";
-import proxy from "../assets/proxy.jpg";
+import proxy from "../assets/proxy.png";
 import DemoModal from "./DemoModal";
 
 export default function ProjectsShowcase() {
@@ -21,6 +21,7 @@ export default function ProjectsShowcase() {
       tech: "React",
       description: "Um simples projeto para estudar como o Redux funciona em uma aplicação para assitir aulas online.",
       image: mockCurse,
+      demoUrl: "https://mock-curse.vercel.app/",
       source: "https://github.com/PedroDallaCosta/mock-curse"
     },
     {
@@ -33,7 +34,7 @@ export default function ProjectsShowcase() {
   ]
 
   return (
-    <section id="projects" className="relative bg-[#080509] py-32">
+    <section id="ProjectsShowcase" className="relative bg-[#080509] py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16">
           <span className="mb-4 block font-mono text-sm text-purple-400">02 / Projetos</span>

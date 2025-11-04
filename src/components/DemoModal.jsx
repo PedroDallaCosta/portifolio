@@ -22,7 +22,7 @@ export default function DemoModal({ isOpen, onClose, title, demoUrl }) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm" onClick={onClose}>
-      <div className="relative w-full max-w-6xl animate-in fade-in zoom-in-95 duration-300" onClick={(e) => e.stopPropagation()} >
+      <div className="relative w-full max-w-7xl animate-in fade-in zoom-in-95 duration-300" onClick={(e) => e.stopPropagation()} >
         <button onClick={onClose} className="absolute -right-4 -top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-lime-400/30 bg-black text-lime-400 transition-all hover:border-lime-400 hover:bg-lime-400/10" aria-label="Close demo" >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ export default function DemoModal({ isOpen, onClose, title, demoUrl }) {
           </svg>
         </button>
 
-        <div className="relative mx-auto max-w-6xl">
+        <div className="relative mx-auto max-w-7xl">
           <div className="rounded-3xl border-8 border-slate-800 bg-slate-900 p-4 shadow-2xl">
             <div className="mb-3 flex items-center justify-between rounded-t-xl bg-slate-950 px-4 py-2">
               <div className="flex items-center gap-2">
@@ -47,10 +47,10 @@ export default function DemoModal({ isOpen, onClose, title, demoUrl }) {
                 <div className="h-2 w-2 rounded-full bg-yellow-500" />
                 <div className="h-2 w-2 rounded-full bg-green-500" />
               </div>
-              <span className="font-mono text-xs text-slate-500">{title}</span>
+              <span className="text-xs text-slate-500">{title}</span>
               <div className="flex items-center gap-2">
-                <div className="h-1 w-1 rounded-full bg-lime-400" />
-                <span className="font-mono text-xs text-lime-400">LIVE</span>
+                <div className="h-1 w-1 rounded-full bg-purple-400" />
+                <span className="text-xs text-purple-400">LIVE</span>
               </div>
             </div>
 
@@ -68,7 +68,7 @@ export default function DemoModal({ isOpen, onClose, title, demoUrl }) {
           <div className="absolute inset-0 -z-10 rounded-3xl bg-lime-400/5 blur-3xl" />
         </div>
 
-        <p className="mt-4 text-center font-mono text-xs text-slate-600">Precione ESC ou fora da página para fechar</p>
+        <p className="mt-4 text-center text-xs text-slate-600">Precione ESC ou fora da página para fechar</p>
       </div>
     </div>
   )
