@@ -2,7 +2,7 @@ import { useState } from "react"
 import urlShort from "../assets/url-short.png";
 import mockCurse from "../assets/mock-curse.png";
 import proxy from "../assets/proxy.png";
-import portifolio from "../assets/portifolio.jpg";
+import portifolio from "../assets/portifolio.png";
 import DemoModal from "./DemoModal";
 
 export default function ProjectsShowcase() {
@@ -28,7 +28,7 @@ export default function ProjectsShowcase() {
     {
       title: "Portifólio",
       tech: "React",
-      description: "Esse próprio portifólio que você está navegando agora mesmo.",
+      description: "Essa mesma página que você está navegando agora pode ser encontrada em nosso github.",
       image: portifolio,
       demoUrl: "https://portifolio-pedrodallacosta.vercel.app/",
       source: "https://github.com/PedroDallaCosta/portifolio"
