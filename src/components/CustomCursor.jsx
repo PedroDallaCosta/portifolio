@@ -14,12 +14,12 @@ export default function CustomCursor() {
   return (
     <>
       <div
-        className="pointer-events-none fixed z-[9999] mix-blend-difference transition-opacity duration-300"
+        className="pointer-events-none fixed z-999 mix-blend-difference transition-opacity duration-300"
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
         }}>
-        <div className="-translate-x-1/2 -translate-y-1/2 rounded-full bg-lime-400 transition-all duration-150 h-6 w-6"></div>
+        <div className="-translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500 transition-all duration-150 h-6 w-6"></div>
       </div>
      
     </>
