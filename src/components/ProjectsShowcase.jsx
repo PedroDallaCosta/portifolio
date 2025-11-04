@@ -2,6 +2,7 @@ import { useState } from "react"
 import urlShort from "../assets/url-short.png";
 import mockCurse from "../assets/mock-curse.png";
 import proxy from "../assets/proxy.png";
+import portifolio from "../assets/portifolio.jpg";
 import DemoModal from "./DemoModal";
 
 export default function ProjectsShowcase() {
@@ -23,6 +24,14 @@ export default function ProjectsShowcase() {
       image: mockCurse,
       demoUrl: "https://mock-curse.vercel.app/",
       source: "https://github.com/PedroDallaCosta/mock-curse"
+    },
+    {
+      title: "Portifólio",
+      tech: "React",
+      description: "Esse próprio portifólio que você está navegando agora mesmo.",
+      image: portifolio,
+      demoUrl: "https://portifolio-pedrodallacosta.vercel.app/",
+      source: "https://github.com/PedroDallaCosta/portifolio"
     },
     {
       title: "Proxy Scrapper",
