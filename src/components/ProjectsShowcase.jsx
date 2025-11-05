@@ -3,6 +3,7 @@ import urlShort from "../assets/url-short.png";
 import mockCurse from "../assets/mock-curse.png";
 import proxy from "../assets/proxy.png";
 import portifolio from "../assets/portifolio.png";
+import delux_lore from "../assets/delux_lore.png";
 import DemoModal from "./DemoModal";
 
 export default function ProjectsShowcase() {
@@ -28,10 +29,17 @@ export default function ProjectsShowcase() {
     {
       title: "Portifólio",
       tech: "React",
-      description: "Essa mesma página que você está navegando agora pode ser encontrada em nosso github.",
+      description: "Essa mesma página que você está navegando agora pode ser encontrada em meu github.",
       image: portifolio,
       demoUrl: "https://portifolio-pedrodallacosta.vercel.app/",
       source: "https://github.com/PedroDallaCosta/portifolio"
+    },
+    {
+      title: "Delux Lore",
+      tech: "React • Lua",
+      description: "Esse foi um projeto feito para o servidor de FIVEM DELUX RP, um tablet administrativo para os admins controlarem seus staffs.",
+      image: delux_lore,
+      demoUrl: "https://delux-lore.vercel.app/",
     },
     {
       title: "Proxy Scrapper",
