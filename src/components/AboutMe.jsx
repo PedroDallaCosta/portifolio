@@ -10,16 +10,16 @@ export default function AboutMe() {
     },
 
     {
-      title: 'Oque eu faço?',
+      title: 'O que eu faço?',
       description:
         <>
           Sou um desenvolvedor full-stack, trabalho com JavaScript, utilizando React e Node.js, desenvolvendo interfaces completas, rápidas e intuitivas, além de integrações sólidas entre frontend, backend e banco de dados.
-          Meu foco é entregar projetos que funcionem bem, dencantem o usuário e gerem resultado real.
+          Meu foco é entregar projetos que funcionem bem, encantem o usuário e gerem resultado real.
         </>
     },
 
     {
-      title: 'Oque eu já fiz?',
+      title: 'O que eu já fiz?',
       description:
         <>
           Criei diversas interfaces e sistemas para servidores FiveM, atendendo milhares de jogadores simultaneamente com estabilidade e performance. Além disso, criei diversas telas e sistemas personalizados para empresas como freelancer,
